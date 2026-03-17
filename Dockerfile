@@ -35,7 +35,7 @@ COPY itsgolubots.txt .
 
 # Install Python dependencies with optimized flags
 RUN pip install --no-cache-dir --upgrade pip \
-    && pip install --no-cache-dir --upgrade -r itsgolubots.txt \
+    && pip install --no-cache-dir --upgrade -r requirements.txt \
     && pip install --no-cache-dir --upgrade "yt-dlp[default]"
 
 # Copy the rest of the application
