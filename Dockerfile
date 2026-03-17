@@ -31,7 +31,7 @@ RUN wget -q https://github.com/axiomatic-systems/Bento4/archive/refs/tags/v1.6.0
     && rm -rf Bento4-1.6.0-639 v1.6.0-639.zip
 
 # Copy requirements file first to leverage Docker cache
-COPY itsgolubots.txt .
+COPY requirements.txt .
 
 # Install Python dependencies with optimized flags
 RUN pip install --no-cache-dir --upgrade pip \
